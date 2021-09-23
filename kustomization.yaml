@@ -1,4 +1,4 @@
-patchesJson6902:
+patches:
 - target:
     version: apps/v1
     kind: Deployment
