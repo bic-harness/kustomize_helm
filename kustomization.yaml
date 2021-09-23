@@ -1,7 +1,7 @@
 patches:
 - target:
-    version: apps/v1
-    kind: Deployment
+    version: v1
+    kind: Pod
     name: helloworld
   patch: |-
     - op: replace
