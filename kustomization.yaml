@@ -1,6 +1,6 @@
 patchesJson6902:
 - target:
-    version: v1
+    version: apps/v1
     kind: Deployment
     name: helloworld
   patch: |-
