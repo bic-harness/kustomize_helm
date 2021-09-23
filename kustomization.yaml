@@ -1,12 +1,10 @@
 patchesJson6902:
 - target:
     version: v1
-    kind: Pod
+    kind: Deployment
     name: helloworld
   patch: |-
-    - kind: Deployment
-      name: helloworld-kustomize
-      op: replace
+    - op: replace
       path: /spec/containers/0/args
       value: ["/bin/echo My name is {{ .Values.employeeName}}. I work for {{ .Values.employeeDepartment}} department. Our company name is {{ .Values.companyName}}"]
 resources:
