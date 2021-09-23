@@ -1,8 +1,8 @@
 patchesJson6902:
 - target:
     version: v1
-    kind: Pod
-    name: helloworld
+    kind: Deployment
+    name: helloworld-kustomize
   patch: |-
     - op: replace
       path: /spec/containers/0/args
