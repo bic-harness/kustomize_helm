@@ -9,3 +9,4 @@ patches:
       value: ["/bin/echo My name is {{ .Values.employeeName}}. I work for {{ .Values.employeeDepartment}} department. Our company name is {{ .Values.companyName}}"]
 resources:
 - templates/pod.yaml
+- templates/pod-2.yaml
