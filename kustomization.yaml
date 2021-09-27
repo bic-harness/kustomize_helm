@@ -7,7 +7,10 @@ patches:
   patch: |-
     - op: replace
       path: /spec/containers/0/args
-      value: ["/bin/echo My name is {{ .Values.employeeName}}. I work for {{ .Values.employeeDepartment}} department. Our company name is {{ .Values.companyName}}"]
+      value: ["/bin/echo This is an overwrite from Kustomize."]
+    - op: replace
+      path: /spec/containers/1/args
+      value: ["/bin/echo This is a 2nd overwrite from Kustomize."]
 resources:
 - templates/pod.yaml
 - templates/pod-2.yaml
